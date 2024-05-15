@@ -114,20 +114,12 @@ nav ul li a {
   padding: 5px;
 }
 
-@media screen and (max-width: 800px) {
-  header {
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-    padding-bottom: 10px;
-  }
-}
-
 .donate-button {
   text-decoration: none;
+  text-wrap: nowrap;
   background-color: var(--light-accent-color);
   padding: 10px 15px;
-  margin-left: 5px;
+  margin: 5px;
   border-radius: 5px;
 }
 
@@ -135,6 +127,19 @@ nav ul li a {
   text-decoration: none;
   background-color: var(--accent-color);
   color: var(--dark-text-color);
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 10px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
 }
 
 .hero-banner {
