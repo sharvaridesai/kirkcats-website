@@ -8,4 +8,12 @@ permalink:  "/{{ page.fields.pageSlug }}.html"
 eleventyComputed: 
     title: "{{ page.fields.pageTitle }}"
 ---
+{% if (page.url | url) !== '/' %}
+<span class="center-text"><h2>{{ page.fields.pageTitle }}</h2></span>
+{% endif %}
+
+{% if page.fields.featuredImage %}
+<img src="{{ page.fields.featuredImage.fields.file.url }}?w=800" />
+{% endif %}
+
 {{ page.fields.pageContent | renderRichTextAsHtml | safe }}

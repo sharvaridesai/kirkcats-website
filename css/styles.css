@@ -56,6 +56,10 @@ p {
   width: 1px;
 }
 
+.center-text {
+  text-align: center;
+}
+
 /* Website Styles */
 
 body {
@@ -91,7 +95,6 @@ header .website-title {
 }
 
 header .website-title img {
-  height: 50px;
   padding-top: 5px;
 }
 
@@ -155,7 +158,7 @@ footer {
   flex-direction: column;
   align-items: center;
   font-size: 0.8em;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 15px;
 }
 
