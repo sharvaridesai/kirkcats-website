@@ -184,10 +184,6 @@ footer .footer-icons a:hover {
   background-color: var(--accent-color);
 }
 
-footer .footer-icons img {
-  height: 35px;
-}
-
 a {
   color: var(--main-text-color);
   text-decoration-color: var(--light-accent-color);
