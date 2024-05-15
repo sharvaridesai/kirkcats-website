@@ -1,0 +1,11 @@
+---
+layout: layout.html
+pagination:
+    data: pages
+    size: 1
+    alias: page
+permalink:  "/{{ page.fields.pageSlug }}.html"
+eleventyComputed: 
+    title: "{{ page.fields.pageTitle }}"
+---
+{{ page.fields.pageContent | renderRichTextAsHtml | safe }}

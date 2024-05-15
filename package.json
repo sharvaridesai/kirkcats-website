@@ -1,0 +1,21 @@
+{
+  "name": "kirkcats",
+  "version": "1.0.0",
+  "description": "Website for KirkCats organization.",
+  "author": "Sharvari Desai",
+  "license": "ISC",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "bench": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
+    "watch": "npx @11ty/eleventy --watch",
+    "serve": "npx @11ty/eleventy --serve",
+    "start": "npx @11ty/eleventy --serve",
+    "debug": "DEBUG=* npx @11ty/eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@contentful/rich-text-html-renderer": "^16.3.5",
+    "contentful": "^10.11.0",
+    "dotenv": "^16.4.5"
+  }
+}
