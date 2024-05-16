@@ -3,8 +3,8 @@
   --main-bg-color: #f9f5f1;
   --main-text-color: #505050;
   --dark-text-color: #333333;
-  --accent-color: #a3b8b1;
-  --light-accent-color: #ced9d6;
+  --accent-color: #5f6fab;
+  --light-accent-color: #cdd2e5;
 }
 
 /* CSS Reset */
@@ -117,6 +117,7 @@ nav ul li a {
 .donate-button {
   text-decoration: none;
   text-wrap: nowrap;
+  font-weight: 600;
   background-color: var(--light-accent-color);
   padding: 10px 15px;
   margin: 5px;
@@ -126,7 +127,7 @@ nav ul li a {
 .donate-button:hover {
   text-decoration: none;
   background-color: var(--accent-color);
-  color: var(--dark-text-color);
+  color: var(--main-bg-color);
 }
 
 @media screen and (max-width: 800px) {
@@ -186,7 +187,7 @@ footer .footer-icons a {
 }
 
 footer .footer-icons a:hover {
-  background-color: var(--accent-color);
+  background-color: var(--light-accent-color);
 }
 
 a {
