@@ -109,6 +109,10 @@ header .website-title {
   gap: 5px;
 }
 
+header .website-title:hover {
+  text-underline-offset: 0%;
+}
+
 header .website-title img {
   padding-top: 5px;
 }
