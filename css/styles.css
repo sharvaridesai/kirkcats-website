@@ -80,6 +80,9 @@ header {
   flex-wrap: wrap;
   gap: 15px;
   padding-bottom: 20px;
+  border-bottom: 2px solid var(--light-accent-color);
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 @media screen and (min-width: 800px) {
@@ -142,18 +145,6 @@ nav ul li a {
   color: var(--main-bg-color);
 }
 
-@media screen and (max-width: 800px) {
-  header {
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  nav ul {
-    gap: 15px;
-  }
-}
-
 .hero-banner {
   height: clamp(250px, 40vw, 400px);
   width: 100vw;
@@ -213,4 +204,21 @@ a:hover {
   text-decoration-color: var(--accent-color);
   text-decoration-thickness: 25%;
   text-underline-offset: 10%;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  main {
+    margin-top: 20px;
+  }
 }
