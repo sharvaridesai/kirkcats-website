@@ -39,13 +39,13 @@
       </a>
       <nav>
         <ul>
-          {% for page in pages %}
+          {% for page in pages %}{% if page.fields.pageSlug != 'index' %}
           <li>
             <a href="/{{page.fields.pageSlug}}.html"
               >{{ page.fields.pageTitle }}</a
             >
           </li>
-          {% endfor %}
+          {% endif %}{% endfor %}
           <li>
             <a
               href="https://www.paypal.com/donate/?hosted_button_id=RBTCTRT77CVCE"
