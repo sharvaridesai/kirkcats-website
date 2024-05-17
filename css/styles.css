@@ -131,6 +131,7 @@ nav ul {
 
 nav ul li a {
   padding: 5px;
+  letter-spacing: 0.5px;
 }
 
 .donate-button {
