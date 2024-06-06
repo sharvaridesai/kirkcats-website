@@ -13,7 +13,7 @@ eleventyComputed:
 {% endif %}
 
 {% if page.fields.featuredImage %}
-<img src="{{ page.fields.featuredImage.fields.file.url }}?w=800" />
+<img src="{{ page.fields.featuredImage.fields.file.url }}?w=800" width="800" alt="" />
 {% endif %}
 
 {{ page.fields.pageContent | renderRichTextAsHtml | safe }}
